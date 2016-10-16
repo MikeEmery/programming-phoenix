@@ -1,28 +1,5 @@
-<h2>Show video</h2>
-
-<ul>
-
-  <li>
-    <strong>User:</strong>
-    <%= @video.user_id %>
-  </li>
-
-  <li>
-    <strong>Url:</strong>
-    <%= @video.url %>
-  </li>
-
-  <li>
-    <strong>Title:</strong>
-    <%= @video.title %>
-  </li>
-
-  <li>
-    <strong>Description:</strong>
-    <%= @video.description %>
-  </li>
-
-</ul>
-
-<%= link "Edit", to: video_path(@conn, :edit, @video) %>
-<%= link "Back", to: video_path(@conn, :index) %>
+<td class="text-right">
+  <%= link "Watch", to: watch_path(@conn, :show, video), class: "btn btn-default btn-xs" %>
+  <%= link "Edit", to: video_path(@conn, :edit, video), class: "btn btn-default btn-xs" %>
+  <%= link "Delete", to: video_path(@conn, :delete, video), class: "btn btn-default btn-xs" %>
+</td>
