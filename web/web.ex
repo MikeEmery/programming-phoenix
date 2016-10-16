@@ -37,6 +37,7 @@ defmodule Rumbl.Web do
       import Rumbl.Router.Helpers
       import Rumbl.Gettext
       import Rumbl.Auth, only: [ authenticate_user: 2 ]
+      require Logger
     end
   end
 
