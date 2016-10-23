@@ -1,3 +1,6 @@
+# Covers code from Programming Phoenix part 1
+For code from the entire book, see https://github.com/MikeEmery/rumbrella
+
 # Rumbl
 
 To start your Phoenix app:
